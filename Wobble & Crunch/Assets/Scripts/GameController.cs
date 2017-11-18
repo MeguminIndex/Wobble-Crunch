@@ -5,16 +5,18 @@ using UnityEngine;
 public class GameController : MonoBehaviour {
 
 	WobbleStatScript wobbleStats;
+	Respawner respawn;
     string crunchTag = "Crunch";
     string wobbleTag = "Wobble";
     GameObject crunch;
     GameObject wobble;
-	[SerializeField] private string[] events;
+	[SerializeField] private string[5] events;
 	
 	// Use this for initialization
 	void Start () 
 	{
 		wobbleStats = GetComponent<WobbleStatScript>();
+		respawn = GetComponent<Respawner>();
         crunch = GameObject.FindWithTag(crunchTag);
         wobble = GameObject.FindWithTag(wobbleTag);
 	}
@@ -34,7 +36,7 @@ public class GameController : MonoBehaviour {
 		}
 		else if (index == 1)
 		{
-            Debug.Log("Called");
+            
             Respawner.Respawn(crunch);
         }
 		else if (index == 2)
