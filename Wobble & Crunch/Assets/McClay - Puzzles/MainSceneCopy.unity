@@ -559,7 +559,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4970554200728450, guid: c397050e8c8f0d549a094c428136944f, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -1.14
+      value: 19.43
       objectReference: {fileID: 0}
     - target: {fileID: 4970554200728450, guid: c397050e8c8f0d549a094c428136944f, type: 2}
       propertyPath: m_LocalRotation.x
@@ -605,6 +605,19 @@ Prefab:
         type: 2}
       propertyPath: jumpRadius
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1996015209918438, guid: c397050e8c8f0d549a094c428136944f, type: 2}
+      propertyPath: m_Name
+      value: TestCrunch
+      objectReference: {fileID: 0}
+    - target: {fileID: 1996015209918438, guid: c397050e8c8f0d549a094c428136944f, type: 2}
+      propertyPath: m_TagString
+      value: Crunch
+      objectReference: {fileID: 0}
+    - target: {fileID: 114783182370529414, guid: c397050e8c8f0d549a094c428136944f,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c397050e8c8f0d549a094c428136944f, type: 2}
@@ -3836,6 +3849,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1200110088}
+  - component: {fileID: 1200110089}
   m_Layer: 0
   m_Name: TempGameController
   m_TagString: Untagged
@@ -3856,6 +3870,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1200110089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1200110087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1ac0dfb13645dc4e99f63ff61bdde2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  events:
+  - WobbleDeath
+  - CrunchDeath
 --- !u!1 &1214475340
 GameObject:
   m_ObjectHideFlags: 0
@@ -4028,6 +4056,22 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1237369670}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1242340947 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1996015209918438, guid: c397050e8c8f0d549a094c428136944f,
+    type: 2}
+  m_PrefabInternal: {fileID: 135600558}
+--- !u!114 &1242340948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1242340947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bec29490ac5d16d4282c1fb1c00c4fda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1276672619
 GameObject:
   m_ObjectHideFlags: 0

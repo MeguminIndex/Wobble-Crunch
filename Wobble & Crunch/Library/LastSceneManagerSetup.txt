@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/McClay - Puzzles/Puzzles.unity
+- path: Assets/McClay - Puzzles/MainSceneCopy.unity
   isLoaded: 1
   isActive: 1
