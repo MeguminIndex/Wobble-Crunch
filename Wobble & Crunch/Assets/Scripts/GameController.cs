@@ -10,7 +10,7 @@ public class GameController : MonoBehaviour {
     string wobbleTag = "Wobble";
     GameObject crunch;
     GameObject wobble;
-	[SerializeField] private string[5] events;
+	[SerializeField] private string[] events;
 	
 	// Use this for initialization
 	void Start () 

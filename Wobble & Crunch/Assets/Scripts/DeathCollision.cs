@@ -19,9 +19,9 @@ public class DeathCollision : MonoBehaviour {
 		
 	}
 	
-	void OnTriggerEnter(Collision other)
+	void OnTriggerEnter(Collider other)
 	{
-		if (other.tag == "Larva")
+		if (other.gameObject.tag == "Larva")
 		{
 			gameController.CallEvent(type);
 			
