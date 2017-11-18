@@ -11,6 +11,14 @@ public class CrunchController : MonoBehaviour {
     Rigidbody rb;
 
     [SerializeField]
+    private string horizontalInput;
+    [SerializeField]
+    private string verticalInput;
+    [SerializeField]
+    private string jumpInput;
+
+
+    [SerializeField]
     private float maxSpeed;
     [SerializeField]
     private float moveForce;
@@ -18,6 +26,9 @@ public class CrunchController : MonoBehaviour {
     private float jumpForce;
     [SerializeField]
     private float rotationLerpSpeed;
+    [SerializeField]
+    private float jumpRadius;
+
     
 	// Use this for initialization
 	void Start () {
@@ -35,14 +46,14 @@ public class CrunchController : MonoBehaviour {
 
     void FixedUpdate()
     {
-        float h = Input.GetAxisRaw("Horizontal");
-        float v = Input.GetAxisRaw("Vertical");
+        float h = Input.GetAxisRaw(horizontalInput);
+        float v = Input.GetAxisRaw(verticalInput);
         if (h != 0 || v != 0)
         {
             DoMovement(h, v);
         }
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown(jumpInput))
             Jump();
 
     }
@@ -51,10 +62,18 @@ public class CrunchController : MonoBehaviour {
     {
         //check that character is on the floor make sure cannot multi jump;
 
+        Vector3 post = transform.position;
 
+        post.y -= transform.localScale.y;
 
-        rb.AddForce(0,jumpForce,0,ForceMode.Impulse);
+        Collider[] coliders = Physics.OverlapSphere(post, jumpRadius);
 
+        Debug.Log("Jumping ray colliders length: " + coliders.Length);
+        if (coliders.Length >0)
+        {
+
+            rb.AddForce(0, jumpForce, 0, ForceMode.Impulse);
+        }
 
     }
 
