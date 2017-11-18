@@ -7,7 +7,7 @@ public class Placeholder : MonoBehaviour {
     void Update()
     {
         if (Input.GetKey("k"))
-            GameControls.Respawn(gameObject);
+            Respawner.Respawn(gameObject);
     }
 
 
@@ -15,7 +15,7 @@ public class Placeholder : MonoBehaviour {
     {
         if (other.CompareTag("Deathplane"))
         {
-            GameControls.Respawn(gameObject);
+            Respawner.Respawn(gameObject);
         }
     }
 

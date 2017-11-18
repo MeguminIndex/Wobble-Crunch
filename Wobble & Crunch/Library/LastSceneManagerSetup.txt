@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/Crunch.unity
+- path: Assets/McClay - Puzzles/Puzzles.unity
   isLoaded: 1
   isActive: 1
