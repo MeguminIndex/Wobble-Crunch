@@ -1,16 +1,16 @@
-﻿using System.Collections;
+﻿ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GameControls : MonoBehaviour {
 
-    static public string Phase = "phase";
+
     public GameObject spawn;
     public List<GameObject> Pubspawns;
     static public Transform[] spawns;
     static GameObject spawnpoint;
     public int spawn_num = 1;
-    static int num;
+    static public int num;
 
     public static List<GameObject> children;
 
@@ -18,7 +18,6 @@ public class GameControls : MonoBehaviour {
     void Start()
     {
         children = spawn.GetChildren();
-        num = spawn_num;   
         spawns = spawn.GetComponentsInChildren<Transform>();
         Pubspawns = children;
     }       
