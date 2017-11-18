@@ -139,10 +139,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraTrans: {fileID: 0}
+  horizontalInput: Horizontal
+  verticalInput: Vertical
+  jumpInput: Jump
   maxSpeed: 0
   moveForce: 15
   jumpForce: 5
   rotationLerpSpeed: 20
+  jumpRadius: 0
 --- !u!135 &135233300445458316
 SphereCollider:
   m_ObjectHideFlags: 1
