@@ -83,7 +83,19 @@ public class CrunchController : MonoBehaviour {
 
     private void DoMovement(float h, float v)
     {
-        
+        //to allow players to reduce speed or change direction in midair we have to handle the 4 different states
+        if (rb.velocity.x > maxSpeed && h > 0)//if there traveling horizontal positive and they are above the speed limit we set h to 0 so we add no more forcer
+            h = 0;
+        //we must then do the same but for the negitive case
+        if (rb.velocity.x < -maxSpeed && h < 0)
+            h = 0;
+
+        //same as above but we handle for verticle
+        if (rb.velocity.z > maxSpeed && v > 0)
+            v = 0;
+
+        if (rb.velocity.z < -maxSpeed && v < 0)
+            v = 0;
 
         Vector3 velocity = rb.velocity;
 
@@ -113,6 +125,7 @@ public class CrunchController : MonoBehaviour {
 
         RotateToCameraDir();
     }
+
 
     private void RotateToCameraDir()
     {
