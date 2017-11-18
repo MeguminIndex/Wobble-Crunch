@@ -34,6 +34,7 @@ public class GameController : MonoBehaviour {
 		}
 		else if (index == 1)
 		{
+            Debug.Log("Called");
             Respawner.Respawn(crunch);
         }
 		else if (index == 2)

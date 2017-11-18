@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Placeholder : MonoBehaviour {
+public class DeathScript : MonoBehaviour {
     GameController gameController;
+    public string death;
 
     void Start()
     {
@@ -12,6 +13,8 @@ public class Placeholder : MonoBehaviour {
 
     void Update()
     {
+        
+
         if (Input.GetKey("k"))
             Respawner.Respawn(gameObject);
     }
@@ -19,10 +22,12 @@ public class Placeholder : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Deathplane"))
+        
+        if (other.tag == "Deathplane")
         {
-            gameController.CallEvent("CrunchDeath");
-            Debug.Log("Me ded");
+            Respawner.Respawn(gameObject);/*
+            gameController.CallEvent(death);
+            Debug.Log("Me ded");*/
         }
     }
 

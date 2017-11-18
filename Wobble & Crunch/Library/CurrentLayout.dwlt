@@ -30,6 +30,58 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+<<<<<<< HEAD
+=======
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 861
+    width: 1416
+    height: 430
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 15}
+  m_Panes:
+  - {fileID: 15}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 8}
+  - {fileID: 2}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1416
+    height: 1291
+  m_MinSize: {x: 202, y: 442}
+  m_MaxSize: {x: 4002, y: 8042}
+  vertical: 1
+  controlID: 2637
+--- !u!114 &4
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+>>>>>>> 8b7c31447970d4d76d9e36de9c51c08ee6dca24d
   m_Script: {fileID: 12008, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -65,8 +117,13 @@ MonoBehaviour:
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
+<<<<<<< HEAD
   m_LastLoadedLayoutName: 
 --- !u!114 &4
+=======
+  m_LastLoadedLayoutName: McClay Layout
+--- !u!114 &6
+>>>>>>> 8b7c31447970d4d76d9e36de9c51c08ee6dca24d
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -90,8 +147,13 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 471}
   m_MaxSize: {x: 18008, y: 14021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 108
 --- !u!114 &5
+=======
+  controlID: 2457
+--- !u!114 &7
+>>>>>>> 8b7c31447970d4d76d9e36de9c51c08ee6dca24d
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -160,8 +222,13 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 471}
   m_MaxSize: {x: 10004, y: 14021}
   vertical: 1
+<<<<<<< HEAD
   controlID: 49
 --- !u!114 &8
+=======
+  controlID: 2557
+--- !u!114 &10
+>>>>>>> 8b7c31447970d4d76d9e36de9c51c08ee6dca24d
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -307,19 +374,29 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
+<<<<<<< HEAD
     - Assets/Materials
+=======
+    - Assets/McClay - Puzzles/Materials
+>>>>>>> 8b7c31447970d4d76d9e36de9c51c08ee6dca24d
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/Models/Materials
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\user\Desktop\gittmp\Wobble-Crunch\Wobble & Crunch
-  m_IsLocked: 0
+  m_LastProjectPath: C:\Users\user\Desktop\TmpGit\Wobble-Crunch\Wobble & Crunch
+  m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 2a280000
     m_LastClickedID: 10282
     m_ExpandedIDs: 0000000002270000142700002c270000382700004827000054270000622700006427000084270000862700008a270000022800000428000006280000082800000a280000
+=======
+    m_SelectedIDs: 7e270000
+    m_LastClickedID: 10110
+    m_ExpandedIDs: 00000000a2280000ba280000bc280000c2280000d0280000da280000e6280000ea280000f8280000022900000a290000102900002e2900005429000056290000582900005a290000
+>>>>>>> 8b7c31447970d4d76d9e36de9c51c08ee6dca24d
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -347,7 +424,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000002270000142700002c270000382700004827000054270000622700006427000084270000862700008a270000022800000428000006280000082800000a280000
+=======
+    m_ExpandedIDs: 00000000a2280000ba280000bc280000c2280000d0280000da280000e6280000ea280000f8280000022900000a290000102900002e2900005429000056290000582900005a290000
+>>>>>>> 8b7c31447970d4d76d9e36de9c51c08ee6dca24d
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -581,9 +662,15 @@ MonoBehaviour:
     height: 547
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 9cfbffff
     m_LastClickedID: -1124
     m_ExpandedIDs: a6fbffff00000000
+=======
+    m_SelectedIDs: 9a280000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 14f5ffff00000000
+>>>>>>> 8b7c31447970d4d76d9e36de9c51c08ee6dca24d
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
