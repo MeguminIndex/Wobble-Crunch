@@ -8,6 +8,7 @@ TagManager:
   - Deathplane
   - Crushable
   - Button
+  - Wobble
   layers:
   - Default
   - TransparentFX

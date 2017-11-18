@@ -849,6 +849,10 @@ Prefab:
       propertyPath: dontClipTag
       value: Crunch
       objectReference: {fileID: 0}
+    - target: {fileID: 4776929271015780, guid: 54d280230f6c3374a8b17a844e7d1fc3, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d280230f6c3374a8b17a844e7d1fc3, type: 2}
   m_IsPrefabParent: 0
@@ -2314,6 +2318,15 @@ Prefab:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 1107826287510944, guid: 6c54a9c36f799d5468d01bbfb2bb2883, type: 2}
+      propertyPath: m_TagString
+      value: Wobble
+      objectReference: {fileID: 0}
+    - target: {fileID: 114813291296769168, guid: 6c54a9c36f799d5468d01bbfb2bb2883,
+        type: 2}
+      propertyPath: moveForce
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6c54a9c36f799d5468d01bbfb2bb2883, type: 2}
   m_IsPrefabParent: 0
@@ -3451,6 +3464,15 @@ Prefab:
       propertyPath: cameraTrans
       value: 
       objectReference: {fileID: 1056249790}
+    - target: {fileID: 114783182370529414, guid: c397050e8c8f0d549a094c428136944f,
+        type: 2}
+      propertyPath: moveForce
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1996015209918438, guid: c397050e8c8f0d549a094c428136944f, type: 2}
+      propertyPath: m_TagString
+      value: Crunch
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c397050e8c8f0d549a094c428136944f, type: 2}
   m_IsPrefabParent: 0
@@ -4843,6 +4865,10 @@ Prefab:
       propertyPath: m_Target
       value: 
       objectReference: {fileID: 1249788249}
+    - target: {fileID: 4189244223041826, guid: 29bf57b4d29028b4f94f4fbaefa053b8, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 29bf57b4d29028b4f94f4fbaefa053b8, type: 2}
   m_IsPrefabParent: 0
@@ -4994,7 +5020,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1551427425}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -5059,6 +5085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 1551427425}
+  tag: 
 --- !u!1 &1570012078
 GameObject:
   m_ObjectHideFlags: 0
@@ -6616,6 +6643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 1551427425}
+  tag: Crunch
 --- !u!23 &2076800655
 MeshRenderer:
   m_ObjectHideFlags: 0
