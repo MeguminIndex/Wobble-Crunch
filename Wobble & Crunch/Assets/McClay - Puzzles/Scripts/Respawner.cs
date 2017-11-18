@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameControls : MonoBehaviour {
+public class Respawner : MonoBehaviour {
 
 
     public GameObject spawn;
