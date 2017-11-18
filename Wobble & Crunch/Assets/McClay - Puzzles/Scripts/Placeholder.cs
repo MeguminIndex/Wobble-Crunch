@@ -15,7 +15,6 @@ public class Placeholder : MonoBehaviour {
     {
         if (other.CompareTag("Deathplane"))
         {
-            Debug.Log("Ded");
             GameControls.Respawn(gameObject);
         }
     }

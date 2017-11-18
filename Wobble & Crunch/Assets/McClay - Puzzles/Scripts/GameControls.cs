@@ -25,7 +25,7 @@ public class GameControls : MonoBehaviour {
     
     void Update()
     {
-        spawnpoint = children[spawn_num];
+        num = spawn_num;
     }
 
     static public void Respawn(GameObject dead)
@@ -33,7 +33,6 @@ public class GameControls : MonoBehaviour {
         Rigidbody velocity = dead.GetComponent<Rigidbody>();
         velocity.velocity = new Vector3(0, 0, 0);
         dead.transform.position = children[num].transform.position;
-        Debug.Log(spawnpoint);   
     }
 }
 
