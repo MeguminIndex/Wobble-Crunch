@@ -36,6 +36,7 @@ public class WobbleStatScript : MonoBehaviour {
 	
 	public void ChangeMass(float addedMass)
 	{
+		
 		if (mass + addedMass >= minMass && mass + addedMass <= maxMass)
 		{
 			mass += addedMass;
@@ -57,4 +58,7 @@ public class WobbleStatScript : MonoBehaviour {
 		
 		ChangeSizeMod();
 	}
-}
+
+	
+	
+	}
