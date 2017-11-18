@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 114185298334170136}
   m_Layer: 0
   m_Name: Crunch
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,9 +125,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraTrans: {fileID: 0}
-  horizontalInput: Horizontal
-  verticalInput: Vertical
-  jumpInput: Jump
+  horizontalInput: Crunch Horizontal
+  verticalInput: Crunch Vertical
+  jumpInput: Crunch Jump
   maxSpeed: 0
   moveForce: 10
   jumpForce: 6
