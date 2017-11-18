@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scene/Wobble.unity
+=======
+- path: Assets/Scene/MainScene.unity
+>>>>>>> 628afbf2928e58d76d70e66543976710be9559c4
   isLoaded: 1
   isActive: 1
