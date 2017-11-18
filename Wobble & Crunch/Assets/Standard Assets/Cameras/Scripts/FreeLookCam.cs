@@ -20,7 +20,10 @@ namespace UnityStandardAssets.Cameras
         [SerializeField] private float m_TiltMin = 45f;                       // The minimum value of the x axis rotation of the pivot.
         [SerializeField] private bool m_LockCursor = false;                   // Whether the cursor should be hidden and locked.
         [SerializeField] private bool m_VerticalAutoReturn = false;           // set wether or not the vertical axis should auto return
-
+		[SerializeField] private string cameraX = "Mouse X";
+		[SerializeField] private string cameraY = "Mouse Y";
+		
+		
         private float m_LookAngle;                    // The rig's y axis rotation.
         private float m_TiltAngle;                    // The pivot's x axis rotation.
         private const float k_LookDistance = 100f;    // How far in front of the pivot the character's look target is.
@@ -73,8 +76,8 @@ namespace UnityStandardAssets.Cameras
 			return;
 
             // Read the user input
-            var x = CrossPlatformInputManager.GetAxis("Mouse X");
-            var y = CrossPlatformInputManager.GetAxis("Mouse Y");
+            var x = CrossPlatformInputManager.GetAxis(cameraX);
+            var y = CrossPlatformInputManager.GetAxis(cameraY);
 
             // Adjust the look angle by an amount proportional to the turn speed and horizontal input.
             m_LookAngle += x*m_TurnSpeed;
