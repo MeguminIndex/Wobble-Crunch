@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scene/MainScene.unity
-=======
-- path: Assets/McClay - Puzzles/Puzzles.unity
->>>>>>> 468dff535d8e5c75efa0fe8fcb83b8596076cc25
   isLoaded: 1
   isActive: 1
