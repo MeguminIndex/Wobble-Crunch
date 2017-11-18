@@ -16,7 +16,8 @@ public class CrunchController : MonoBehaviour {
     private float moveForce;
     [SerializeField]
     private float jumpForce;
-
+    [SerializeField]
+    private float rotationLerpSpeed;
     
 	// Use this for initialization
 	void Start () {
@@ -91,7 +92,7 @@ public class CrunchController : MonoBehaviour {
     private void RotateToCameraDir()
     {
         //lerp the rotation so its not instant
-
+        transform.rotation = Quaternion.Lerp(transform.rotation,cameraTrans.rotation, Time.fixedDeltaTime * rotationLerpSpeed);
     }
 
 }
