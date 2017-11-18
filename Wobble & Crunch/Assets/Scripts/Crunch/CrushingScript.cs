@@ -7,6 +7,8 @@ public class CrushingScript : MonoBehaviour {
 
     bool crushing;
     Rigidbody rb;
+    [SerializeField]
+    private int slamMassReductionWob;
 
     [SerializeField]
     private float downForce;
@@ -47,6 +49,13 @@ public class CrushingScript : MonoBehaviour {
 
 
                 }
+
+            }
+            else if(collision.gameObject.tag == "Wobble")
+            {
+                WobbleStatScript wobwob = collision.gameObject.GetComponent<WobbleStatScript>();
+
+                wobwob.ChangeMass(slamMassReductionWob);
 
             }
 

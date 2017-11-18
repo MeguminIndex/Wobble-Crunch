@@ -9,6 +9,7 @@ TagManager:
   - Crushable
   - Button
   - Wobble
+  - Edible
   layers:
   - Default
   - TransparentFX

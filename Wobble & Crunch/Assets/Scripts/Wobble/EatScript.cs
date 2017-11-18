@@ -5,7 +5,7 @@ using UnityEngine;
 public class EatScript : MonoBehaviour {
 
 	WobbleStatScript wobbleStats;
-	string eatingTag = "edible";
+	string eatingTag = "Edible";
 	
 	// Use this for initialization
 	void Start () 

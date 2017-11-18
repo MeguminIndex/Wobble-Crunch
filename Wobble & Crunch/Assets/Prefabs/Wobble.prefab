@@ -26,9 +26,9 @@ GameObject:
   - component: {fileID: 114813291296769168}
   - component: {fileID: 114740196549398140}
   - component: {fileID: 114031464379915892}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wobble
-  m_TagString: Untagged
+  m_TagString: Wobble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minMass: 1
-  maxMass: 100
+  maxMass: 50
   health: 100
 --- !u!114 &114813291296769168
 MonoBehaviour:
@@ -142,9 +142,9 @@ MonoBehaviour:
   horizontalInput: Wobble Horizontal
   verticalInput: Wobble Vertical
   jumpInput: Wobble Jump
-  maxSpeed: 0
-  moveForce: 10
-  jumpForce: 6
+  maxSpeed: 13
+  moveForce: 50
+  jumpForce: 15
   rotationLerpSpeed: 20
   raycastDist: 1
 --- !u!135 &135870203375965164

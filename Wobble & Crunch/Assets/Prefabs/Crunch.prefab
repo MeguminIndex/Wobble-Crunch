@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 114185298334170136}
   m_Layer: 0
   m_Name: Crunch
-  m_TagString: Untagged
+  m_TagString: Crunch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77b5bcdb7cf64974b9c399e1d5745c9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slamMassReductionWob: -10
   downForce: 10
 --- !u!114 &114783182370529414
 MonoBehaviour:
@@ -128,8 +129,8 @@ MonoBehaviour:
   horizontalInput: Crunch Horizontal
   verticalInput: Crunch Vertical
   jumpInput: Crunch Jump
-  maxSpeed: 0
-  moveForce: 10
+  maxSpeed: 10
+  moveForce: 20
   jumpForce: 6
   rotationLerpSpeed: 20
   raycastDist: 1
