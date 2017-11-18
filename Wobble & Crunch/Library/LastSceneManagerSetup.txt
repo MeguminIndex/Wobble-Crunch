@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scene/MainScene.unity
-=======
 - path: Assets/Scene/Crunch.unity
->>>>>>> c047129ece75513a7cb8fa7862cef203ba6f1516
   isLoaded: 1
   isActive: 1
