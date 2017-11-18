@@ -27,7 +27,7 @@ public class CrunchController : MonoBehaviour {
     [SerializeField]
     private float rotationLerpSpeed;
     [SerializeField]
-    private float jumpRadius;
+    private float raycastDist;
 
     
 	// Use this for initialization
@@ -38,8 +38,7 @@ public class CrunchController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-        
+       
 
         
 	}
@@ -62,18 +61,23 @@ public class CrunchController : MonoBehaviour {
     {
         //check that character is on the floor make sure cannot multi jump;
 
-        Vector3 post = transform.position;
+         Vector3 post = transform.position;
 
-        post.y -= transform.localScale.y;
+         post.y -= transform.localScale.y;
 
-        Collider[] coliders = Physics.OverlapSphere(post, jumpRadius);
+        //   Collider[] coliders = Physics.OverlapSphere(post, jumpRadius);
 
-        Debug.Log("Jumping ray colliders length: " + coliders.Length);
-        if (coliders.Length >0)
+        //   Debug.Log("Jumping ray colliders length: " + coliders.Length);
+        //  if (coliders.Length >0)
+        //  {
+
+        Ray ray = new Ray(transform.position,Vector3.down);
+        Debug.DrawRay(post, Vector3.down,Color.blue,1);
+        if (Physics.Raycast(ray, raycastDist))
         {
-
             rb.AddForce(0, jumpForce, 0, ForceMode.Impulse);
         }
+      //  }
 
     }
 
