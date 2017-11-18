@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
+- path: Assets/McClay - Puzzles/MainSceneCopy.unity
+=======
 - path: Assets/Scene/MainScene.unity
+>>>>>>> 2858056fb83c80ae7a489e914112e843b71a7b15
   isLoaded: 1
   isActive: 1

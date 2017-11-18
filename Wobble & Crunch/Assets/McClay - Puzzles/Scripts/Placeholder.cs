@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Placeholder : MonoBehaviour {
+    GameController gameController;
+
+    void Start()
+    {
+        gameController = GameObject.FindWithTag("GameController").GetComponent<GameController>();
+    }
 
     void Update()
     {
@@ -15,7 +21,8 @@ public class Placeholder : MonoBehaviour {
     {
         if (other.CompareTag("Deathplane"))
         {
-            Respawner.Respawn(gameObject);
+            gameController.CallEvent("CrunchDeath");
+            Debug.Log("Me ded");
         }
     }
 
