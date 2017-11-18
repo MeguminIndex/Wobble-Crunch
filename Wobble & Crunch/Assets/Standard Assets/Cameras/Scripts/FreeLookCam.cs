@@ -1,6 +1,6 @@
 using System;
 using UnityEngine;
-using UnityStandardAssets.CrossPlatformInput;
+//using UnityStandardAssets.CrossPlatformInput;
 
 namespace UnityStandardAssets.Cameras
 {
@@ -76,8 +76,8 @@ namespace UnityStandardAssets.Cameras
 			return;
 
             // Read the user input
-            var x = CrossPlatformInputManager.GetAxis(cameraX);
-            var y = CrossPlatformInputManager.GetAxis(cameraY);
+            var x = Input.GetAxis(cameraX);
+            var y = Input.GetAxis(cameraY);
 
             // Adjust the look angle by an amount proportional to the turn speed and horizontal input.
             m_LookAngle += x*m_TurnSpeed;
