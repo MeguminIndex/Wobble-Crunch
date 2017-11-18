@@ -38,10 +38,11 @@ public class CrunchController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-       
 
-        
-	}
+        if (Input.GetButtonDown(jumpInput))
+            Jump();
+
+    }
 
     void FixedUpdate()
     {
@@ -52,8 +53,7 @@ public class CrunchController : MonoBehaviour {
             DoMovement(h, v);
         }
 
-        if (Input.GetButtonDown(jumpInput))
-            Jump();
+      
 
     }
 
@@ -83,6 +83,8 @@ public class CrunchController : MonoBehaviour {
 
     private void DoMovement(float h, float v)
     {
+        
+
         Vector3 velocity = rb.velocity;
 
         Vector3 direction = Vector3.forward;
