@@ -10,6 +10,7 @@ public class WallBehaviour : MonoBehaviour {
     Quaternion set;
     Vector3 posit;
     Rigidbody rb;
+    static public bool drop = false;
 
 	// Use this for initialization
 	void Start () {
@@ -20,12 +21,20 @@ public class WallBehaviour : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         
-        if(Input.GetKey("k"))
-        {
-            while (pos > 0 -height - 1);
-            pos -= 1;
-            posit = new Vector3(transform.position.x, pos,transform.position.z);
-            this.transform.SetPositionAndRotation(posit, set);
-        }
+        
+        if (pos < 0 - height - 1)
+            drop = false;
+
+        if (drop)
+            Drop();
+        
 	}
+    
+
+    public void Drop()
+    {
+        pos -= .3f;
+        posit = new Vector3(transform.position.x, pos, transform.position.z);
+        this.transform.SetPositionAndRotation(posit, set);
+    }
 }
