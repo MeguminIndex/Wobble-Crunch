@@ -5,14 +5,18 @@ using UnityEngine;
 public class GameController : MonoBehaviour {
 
 	WobbleStatScript wobbleStats;
-	
+    string crunchTag = "Crunch";
+    string wobbleTag = "Wobble";
+    GameObject crunch;
+    GameObject wobble;
 	[SerializeField] private string[] events;
 	
 	// Use this for initialization
 	void Start () 
 	{
 		wobbleStats = GetComponent<WobbleStatScript>();
-		
+        crunch = GameObject.FindWithTag(crunchTag);
+        wobble = GameObject.FindWithTag(wobbleTag);
 	}
 	
 	// Update is called once per frame
@@ -26,12 +30,13 @@ public class GameController : MonoBehaviour {
 	{
 		if (index == 0)
 		{
-			
+            Respawner.Respawn(wobble);
 		}
 		else if (index == 1)
 		{
-			
-		}
+            Debug.Log("Called");
+            Respawner.Respawn(crunch);
+        }
 		else if (index == 2)
 		{
 			
@@ -52,7 +57,7 @@ public class GameController : MonoBehaviour {
 		
 	}
 	
-	void CallEvent(string name)
+	public void CallEvent(string name)
 	{
 		for (int i = 0; i < events.Length; i++)
 		{
