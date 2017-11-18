@@ -114,6 +114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slamMassReductionWob: -10
   downForce: 10
+  groundPound: Crunch Pound
 --- !u!114 &114783182370529414
 MonoBehaviour:
   m_ObjectHideFlags: 1

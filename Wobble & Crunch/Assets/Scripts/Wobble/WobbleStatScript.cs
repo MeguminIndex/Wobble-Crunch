@@ -11,15 +11,15 @@ public class WobbleStatScript : MonoBehaviour {
 	
 	float mass = 1.0f;
 	float sizeMod = 1.0f;
-	
-	
-	
-	
+
+
+
 
 	// Use this for initialization
 	void Start () 
 	{
-		rb = GetComponent<Rigidbody>();
+        ChangeSizeMod();
+        rb = GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
@@ -30,7 +30,7 @@ public class WobbleStatScript : MonoBehaviour {
 	
 	void ChangeSizeMod()
 	{
-		sizeMod = 1.0f + (mass / maxMass);
+        sizeMod = 0.5f + (mass / maxMass);
 		transform.localScale = new Vector3(sizeMod, sizeMod, sizeMod);
 	}
 	

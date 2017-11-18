@@ -12,17 +12,19 @@ public class CrushingScript : MonoBehaviour {
 
     [SerializeField]
     private float downForce;
+    [SerializeField]
+    private string groundPound;
 
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         rb = GetComponent<Rigidbody>();	
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-        if(Input.GetKeyDown(KeyCode.C))
+        if(Input.GetButtonDown(groundPound))
         {
             Debug.Log("Crushiin....");
             rb.AddForce(new Vector3(0, -downForce,0),ForceMode.Impulse);

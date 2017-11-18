@@ -655,7 +655,7 @@ Prefab:
     - target: {fileID: 54410070377201584, guid: 6c54a9c36f799d5468d01bbfb2bb2883,
         type: 2}
       propertyPath: m_Mass
-      value: 1
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4203604458270972, guid: 6c54a9c36f799d5468d01bbfb2bb2883, type: 2}
       propertyPath: m_LocalScale.x
@@ -668,6 +668,11 @@ Prefab:
     - target: {fileID: 4203604458270972, guid: 6c54a9c36f799d5468d01bbfb2bb2883, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114813291296769168, guid: 6c54a9c36f799d5468d01bbfb2bb2883,
+        type: 2}
+      propertyPath: jumpForce
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6c54a9c36f799d5468d01bbfb2bb2883, type: 2}
@@ -734,6 +739,11 @@ Prefab:
     - target: {fileID: 1996015209918438, guid: c397050e8c8f0d549a094c428136944f, type: 2}
       propertyPath: m_TagString
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114185298334170136, guid: c397050e8c8f0d549a094c428136944f,
+        type: 2}
+      propertyPath: slamMassReductionWob
+      value: -5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c397050e8c8f0d549a094c428136944f, type: 2}

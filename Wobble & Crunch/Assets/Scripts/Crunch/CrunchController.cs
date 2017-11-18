@@ -16,7 +16,8 @@ public class CrunchController : MonoBehaviour {
     private string verticalInput;
     [SerializeField]
     private string jumpInput;
-
+   
+    
 
     [SerializeField]
     private float maxSpeed;
