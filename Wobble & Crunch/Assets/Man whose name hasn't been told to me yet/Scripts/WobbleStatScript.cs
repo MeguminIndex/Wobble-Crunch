@@ -5,7 +5,10 @@ using UnityEngine;
 public class WobbleStatScript : MonoBehaviour {
 
 	Rigidbody rb;
-
+	public float minMass = 1.0f;
+	public float maxMass = 100.0f;
+	
+	
 	float mass = 1.0f;
 	float sizeMod = 1.0f;
 	
@@ -25,9 +28,33 @@ public class WobbleStatScript : MonoBehaviour {
 		
 	}
 	
+	void ChangeSizeMod()
+	{
+		sizeMod = 1.0f + (mass / maxMass);
+		transform.localScale = new Vector3(sizeMod, sizeMod, sizeMod);
+	}
+	
 	public void ChangeMass(float addedMass)
 	{
-		mass += addedMass;
-		rb.mass = mass;
+		if (mass + addedMass >= minMass && mass + addedMass <= maxMass)
+		{
+			mass += addedMass;
+			rb.mass = mass;
+		}
+		else
+		{
+			if (mass + addedMass <= minMass)
+			{
+				mass = minMass;
+				rb.mass = minMass;
+			}
+			else if (mass + addedMass >= maxMass)
+			{
+				mass = maxMass;
+				rb.mass = maxMass;
+			}
+		}
+		
+		ChangeSizeMod();
 	}
 }
