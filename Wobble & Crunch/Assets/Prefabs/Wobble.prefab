@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114971519500820012}
   - component: {fileID: 114334748939872838}
   - component: {fileID: 114909728057697714}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wobble
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1030130991461924}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.62905836, y: -2.1364336, z: 4.8261724}
+  m_LocalPosition: {x: -2.32, y: 0.97, z: -0.13087724}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -60,7 +60,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 5f1a7e3468e62dc4bb555a8c4205ef9d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -139,10 +139,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraTrans: {fileID: 0}
+  horizontalInput: Horizontal
+  verticalInput: Vertical
+  jumpInput: 
   maxSpeed: 0
   moveForce: 15
   jumpForce: 5
   rotationLerpSpeed: 20
+  raycastDist: 0
 --- !u!135 &135233300445458316
 SphereCollider:
   m_ObjectHideFlags: 1
