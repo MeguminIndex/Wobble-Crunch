@@ -24,7 +24,7 @@ public class Respawner : MonoBehaviour {
     
     void Update()
     {
-        num = spawn_num;
+        spawn_num = num;
     }
 
     static public void Respawn(GameObject dead)
