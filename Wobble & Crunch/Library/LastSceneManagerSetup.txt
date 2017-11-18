@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scene/Crunch.unity
-=======
-- path: Assets/Scene/Wobble.unity
->>>>>>> 8cca16cdaac681980fecb06cc2e827ebb5c0d806
+- path: Assets/Scene/MainScene.unity
   isLoaded: 1
   isActive: 1
