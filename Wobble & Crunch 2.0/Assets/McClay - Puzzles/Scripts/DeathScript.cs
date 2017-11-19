@@ -26,7 +26,8 @@ public class DeathScript : MonoBehaviour {
 		
         if (other.tag == "Deathplane")
         {
-            Respawner.Respawn(gameObject);
+            //Respawner.Respawn(gameObject);
+            gameController.CallEvent(death);
            
         }
     }
