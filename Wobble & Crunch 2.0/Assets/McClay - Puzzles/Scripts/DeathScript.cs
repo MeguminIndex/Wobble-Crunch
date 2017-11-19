@@ -13,20 +13,16 @@ public class DeathScript : MonoBehaviour {
 
     void Update()
     {
-        
-
         if (Input.GetKey("k"))
             Respawner.Respawn(gameObject);
     }
 
 
 	void OnTriggerEnter(Collider other)
-    {
-
-		
+    {		
         if (other.tag == "Deathplane")
         {
-            //Respawner.Respawn(gameObject);
+            Respawner.Respawn(gameObject);
             gameController.CallEvent(death);
            
         }
