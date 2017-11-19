@@ -10,7 +10,8 @@ public class WallBehaviour : MonoBehaviour {
     Quaternion set;
     Vector3 posit;
     Rigidbody rb;
-    static public bool drop = false;
+    public bool activate = false;
+
 
 	// Use this for initialization
 	void Start () {
@@ -23,9 +24,9 @@ public class WallBehaviour : MonoBehaviour {
         
         
         if (pos < 0 - height - 1)
-            drop = false;
+            activate = false;
 
-        if (drop)
+        if (activate)
             Drop();
         
 	}

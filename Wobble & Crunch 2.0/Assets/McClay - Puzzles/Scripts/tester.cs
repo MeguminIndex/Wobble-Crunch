@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class tester : MonoBehaviour {
 
-    public GameObject door;
+    /*public GameObject door;
     WallBehaviour stuff;
 	public string tag;
 
@@ -15,7 +15,7 @@ public class tester : MonoBehaviour {
     void OnTriggerEnter(Collider other)
     {
 		if (other.CompareTag(tag))
-            WallBehaviour.drop = true;
-    }
+            WallBehaviour.activate = true;
+    }*/
 
 }
