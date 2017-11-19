@@ -721,30 +721,6 @@ Prefab:
       propertyPath: cameraTrans
       value: 
       objectReference: {fileID: 812686343}
-    - target: {fileID: 114783182370529414, guid: c397050e8c8f0d549a094c428136944f,
-        type: 2}
-      propertyPath: maxSpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 23754452033359306, guid: c397050e8c8f0d549a094c428136944f,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 5f1a7e3468e62dc4bb555a8c4205ef9d, type: 2}
-    - target: {fileID: 114783182370529414, guid: c397050e8c8f0d549a094c428136944f,
-        type: 2}
-      propertyPath: moveForce
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 1996015209918438, guid: c397050e8c8f0d549a094c428136944f, type: 2}
-      propertyPath: m_TagString
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114185298334170136, guid: c397050e8c8f0d549a094c428136944f,
-        type: 2}
-      propertyPath: slamMassReductionWob
-      value: -5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c397050e8c8f0d549a094c428136944f, type: 2}
   m_IsPrefabParent: 0

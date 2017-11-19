@@ -36,7 +36,7 @@ public class WobbleStatScript : MonoBehaviour {
 		transform.localScale = new Vector3(sizeMod, sizeMod, sizeMod);
 	}
 	
-	public void ChangeMass(float addedMass)
+	public float ChangeMass(float addedMass)
 	{
 		
 		if (mass + addedMass >= minMass && mass + addedMass <= maxMass)
@@ -59,6 +59,8 @@ public class WobbleStatScript : MonoBehaviour {
 		}
 		
 		ChangeSizeMod();
+
+		return rb.mass;
 	}
 
 	
