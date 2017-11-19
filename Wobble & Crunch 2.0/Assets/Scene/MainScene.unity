@@ -2430,11 +2430,6 @@ Prefab:
       propertyPath: cameraTrans
       value: 
       objectReference: {fileID: 852665538}
-    - target: {fileID: 54410070377201584, guid: 6c54a9c36f799d5468d01bbfb2bb2883,
-        type: 2}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6c54a9c36f799d5468d01bbfb2bb2883, type: 2}
   m_IsPrefabParent: 0
