@@ -8,6 +8,7 @@ TagManager:
   - Edible
   - Crunch
   - Deathplane
+  - Crushable
   layers:
   - Default
   - TransparentFX
