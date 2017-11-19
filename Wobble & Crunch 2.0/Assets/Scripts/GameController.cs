@@ -11,6 +11,8 @@ public class GameController : MonoBehaviour {
     GameObject crunch;
     GameObject wobble;
 	[SerializeField] private string[] events;
+
+    public int deaths = 0;
 	
 	// Use this for initialization
 	void Start () 
@@ -32,12 +34,16 @@ public class GameController : MonoBehaviour {
 	{
 		if (index == 0)
 		{
+         
+            deaths += 1;
             Respawner.Respawn(wobble);
+            
 		}
 		else if (index == 1)
 		{
-            
+            deaths += 1;
             Respawner.Respawn(crunch);
+            
         }
 		else if (index == 2)
 		{
