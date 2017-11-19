@@ -10,6 +10,7 @@ public class SlimePlate : MonoBehaviour {
 
     public GameObject husband;
     WallBehaviour script;
+    h_onPhase script2;
 
     public Light[] lights;
 
@@ -41,12 +42,14 @@ public class SlimePlate : MonoBehaviour {
 
                     }
 
-                    script.h_on = true;
+                    try { script.h_on = true; }
+                    catch { script2 = husband.GetComponent<h_onPhase>(); script2.h_on = true; }
 
                 }
                 else
                 {
-                   
+
+                    script.h_on = true;
 
                     float tmp = mass / reqMass;
 
@@ -79,6 +82,8 @@ public class SlimePlate : MonoBehaviour {
             {
                 item.enabled = false;
 
+                try { script2 = husband.GetComponent<h_onPhase>(); script2.h_on = false; }
+                catch { }
             }
         }
 
