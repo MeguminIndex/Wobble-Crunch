@@ -1127,23 +1127,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 250626601}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &268871125 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1996015209918438, guid: c397050e8c8f0d549a094c428136944f,
-    type: 2}
-  m_PrefabInternal: {fileID: 1068537655}
---- !u!114 &268871132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 268871125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bec29490ac5d16d4282c1fb1c00c4fda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  death: CrunchDeath
 --- !u!1 &282483718
 GameObject:
   m_ObjectHideFlags: 0
@@ -2423,7 +2406,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4203604458270972, guid: 6c54a9c36f799d5468d01bbfb2bb2883, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 114813291296769168, guid: 6c54a9c36f799d5468d01bbfb2bb2883,
         type: 2}
@@ -3554,47 +3537,13 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4970554200728450, guid: c397050e8c8f0d549a094c428136944f, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 23754452033359306, guid: c397050e8c8f0d549a094c428136944f,
-        type: 2}
-      propertyPath: m_ProbeAnchor
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 23754452033359306, guid: c397050e8c8f0d549a094c428136944f,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 5f1a7e3468e62dc4bb555a8c4205ef9d, type: 2}
     - target: {fileID: 114783182370529414, guid: c397050e8c8f0d549a094c428136944f,
         type: 2}
       propertyPath: cameraTrans
       value: 
       objectReference: {fileID: 1056249790}
-    - target: {fileID: 114783182370529414, guid: c397050e8c8f0d549a094c428136944f,
-        type: 2}
-      propertyPath: moveForce
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 1996015209918438, guid: c397050e8c8f0d549a094c428136944f, type: 2}
-      propertyPath: m_TagString
-      value: Crunch
-      objectReference: {fileID: 0}
-    - target: {fileID: 114783182370529414, guid: c397050e8c8f0d549a094c428136944f,
-        type: 2}
-      propertyPath: maxSpeed
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114185298334170136, guid: c397050e8c8f0d549a094c428136944f,
-        type: 2}
-      propertyPath: slamMassReductionWob
-      value: -1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114185298334170136, guid: c397050e8c8f0d549a094c428136944f,
-        type: 2}
-      propertyPath: upforce
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c397050e8c8f0d549a094c428136944f, type: 2}
   m_IsPrefabParent: 0
@@ -4678,7 +4627,7 @@ Transform:
   m_LocalScale: {x: 145, y: 0.001, z: 145}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1356254571
 GameObject:
