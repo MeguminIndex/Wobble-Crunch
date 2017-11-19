@@ -42,8 +42,10 @@ public class CrunchController : MonoBehaviour {
 
         if (Input.GetButtonDown(jumpInput))
             Jump();
-
+        
     }
+
+ 
 
     void FixedUpdate()
     {
@@ -92,11 +94,6 @@ public class CrunchController : MonoBehaviour {
         direction.x *= h;
         direction.z *= v;
 
-
-        Debug.Log(direction);
-
-        
-         
         Vector3 forceVec = cameraTrans.TransformDirection(h,0,v) * moveForce;//movement is based on direction of Camera
        
 
@@ -117,7 +114,6 @@ public class CrunchController : MonoBehaviour {
 
 		//to allow players to reduce speed or change direction in midair we have to handle the 4 different states
 		if (rb.velocity.z > maxSpeed) {//if there traveling horizontal positive and they are above the speed limit we set h to 0 so we add no more forcer
-			Debug.Log(new Vector3(0,0,rb.velocity.z - maxSpeed));
 			rb.velocity = new Vector3 (rb.velocity.x,rb.velocity.y,maxSpeed);
 		}
 		//we must then do the same but for the negitive case
@@ -141,8 +137,13 @@ public class CrunchController : MonoBehaviour {
 
     private void RotateToCameraDir()
     {
+
+        //Quaternion ToRotation = cameraTrans.rotation;
+      //  ToRotation.x = transform.rotation.x;
+
         //lerp the rotation so its not instant
-        transform.rotation = Quaternion.Lerp(transform.rotation,cameraTrans.rotation, Time.fixedDeltaTime * rotationLerpSpeed);
+          transform.rotation = Quaternion.Lerp(transform.rotation, cameraTrans.rotation, Time.fixedDeltaTime * rotationLerpSpeed);
+        //transform.rotation = ToRotation;
     }
 
 }

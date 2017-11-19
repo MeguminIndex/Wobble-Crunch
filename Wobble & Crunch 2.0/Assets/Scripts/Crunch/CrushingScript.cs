@@ -27,7 +27,7 @@ public class CrushingScript : MonoBehaviour {
 
         if(Input.GetButtonDown(groundPound))
         {
-            Debug.Log("Crushiin....");
+           
             rb.AddForce(new Vector3(0, -downForce,0),ForceMode.Impulse);
             crushing = true;
            // rb.mass = 1; 

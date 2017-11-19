@@ -23,12 +23,11 @@ public class DeathScript : MonoBehaviour {
 	void OnTriggerEnter(Collider other)
     {
 
-		Debug.Log("Me ded");
+		
         if (other.tag == "Deathplane")
         {
-            Respawner.Respawn(gameObject);/*
-            gameController.CallEvent(death);
-            Debug.Log("Me ded");*/
+            Respawner.Respawn(gameObject);
+           
         }
     }
 
