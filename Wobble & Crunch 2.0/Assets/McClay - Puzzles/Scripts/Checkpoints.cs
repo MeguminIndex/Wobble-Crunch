@@ -9,7 +9,7 @@ public class Checkpoints : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
 	{
-        if (other.tag == "Wobble")
+        if (other.tag == "Wobble" || other.tag == "Crunch")
 		{
 			Respawner.num = me;
 		}
