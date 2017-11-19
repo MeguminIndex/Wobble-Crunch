@@ -18,6 +18,7 @@ public class WallBehaviour : MonoBehaviour {
     public float stop;
     public float distance;
     Vector3 location;
+    float speedAdd = .3f;
 
 
     // Use this for initialization
@@ -26,6 +27,7 @@ public class WallBehaviour : MonoBehaviour {
         {
             speed = speed * -1;
             inverter = -1;
+            
         }
         location = transform.position;
 
@@ -34,7 +36,7 @@ public class WallBehaviour : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (transform.position.y < (0 - height - 1)*inverter)
+        if (stop > distance)
             v_on = false;
 
         if (v_on)
@@ -42,7 +44,7 @@ public class WallBehaviour : MonoBehaviour {
             Vertical();
         }
 
-        if (transform.position.x < (0 - height - 1) * inverter)
+        if (stop > distance)
             h_on = false;
 
         if (h_on)
@@ -64,19 +66,21 @@ public class WallBehaviour : MonoBehaviour {
 
     public void ZHorizontal()
     {
-        stop += speed;
+        stop += speedAdd;
         posit = new Vector3(transform.position.x, transform.position.y, transform.position.z + speed);
         this.transform.SetPositionAndRotation(posit, set);
     }
 
     public void Horizontal()
     {
+        stop += speedAdd;
         posit = new Vector3(transform.position.x + speed, transform.position.y, transform.position.z);
         this.transform.SetPositionAndRotation(posit, set);
     }
 
     public void Vertical()
     {
+        stop += speedAdd;
         posit = new Vector3(transform.position.x, transform.position.y + speed, transform.position.z);
         this.transform.SetPositionAndRotation(posit, set);
     }
