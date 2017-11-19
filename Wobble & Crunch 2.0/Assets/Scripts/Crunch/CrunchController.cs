@@ -65,21 +65,38 @@ public class CrunchController : MonoBehaviour {
         //check that character is on the floor make sure cannot multi jump;
 
          Vector3 post = transform.position;
+        
 
-         post.y -= transform.localScale.y;
+         post.y -= (transform.localScale.y - 0.1f);
 
+        Vector3 post2 = post;
+        Vector3 post3 = post;
+        Vector3 post4 = post;
+        Vector3 post5 = post;
+
+        post2.x -= 0.5f;
+        post3.x += 0.5f;
+        post4.y -= 0.5f;
+        post5.y += 0.5f;
         //   Collider[] coliders = Physics.OverlapSphere(post, jumpRadius);
 
         //   Debug.Log("Jumping ray colliders length: " + coliders.Length);
         //  if (coliders.Length >0)
         //  {
 
-        Ray ray = new Ray(transform.position,Vector3.down);
-        Debug.DrawRay(post, Vector3.down,Color.blue,1);
-        if (Physics.Raycast(ray, raycastDist))
+        Ray[] rayA = { new Ray(post, Vector3.down),new Ray(post2, Vector3.down), new Ray(post3, Vector3.down), new Ray(post4, Vector3.down), new Ray(post5, Vector3.down) };
+
+        foreach(var ray in rayA)
         {
-            rb.AddForce(0, jumpForce, 0, ForceMode.Impulse);
+            Debug.DrawRay(transform.position, Vector3.down, Color.blue, raycastDist);
+            if (Physics.Raycast(ray, raycastDist))
+            {
+                rb.AddForce(0, jumpForce, 0, ForceMode.Impulse);
+                break;
+            }
         }
+
+       
       //  }
 
     }
