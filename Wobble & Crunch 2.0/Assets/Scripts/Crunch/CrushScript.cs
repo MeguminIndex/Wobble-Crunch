@@ -21,7 +21,7 @@ public class CrushScript : MonoBehaviour {
         {
             transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y / 2, transform.localScale.z);
             crushed = true;
-            script.activate = true;
+            script.v_on = true;
         }
     }
 

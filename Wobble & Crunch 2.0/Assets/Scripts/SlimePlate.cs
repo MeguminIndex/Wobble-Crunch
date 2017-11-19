@@ -8,8 +8,16 @@ public class SlimePlate : MonoBehaviour {
     private float reqMass;
 
 
+    public GameObject husband;
+    WallBehaviour script;
+
     public Light[] lights;
-     
+
+
+    void Start()
+    {
+        script = husband.GetComponent<WallBehaviour>();
+    }
 
 
     void OnTriggerEnter(Collider other)
@@ -32,6 +40,9 @@ public class SlimePlate : MonoBehaviour {
                         item.enabled = true;
 
                     }
+
+                    script.h_on = true;
+
                 }
                 else
                 {

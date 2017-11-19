@@ -10,7 +10,8 @@ public class WallBehaviour : MonoBehaviour {
     Quaternion set;
     Vector3 posit;
     Rigidbody rb;
-    public bool activate = false;
+    public bool v_on = false;
+    public bool h_on = false;
 
 
 	// Use this for initialization
@@ -21,18 +22,29 @@ public class WallBehaviour : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        
-        
-        if (pos < 0 - height - 1)
-            activate = false;
 
-        if (activate)
-            Drop();
+        if (pos < 0 - height - 1)
+            v_on = false;
+
+        if (v_on)
+            Vertical();
+
+        if (pos < 0 - height - 1)
+            h_on = false;
+
+        if (h_on)
+            Horizontal();
         
 	}
-    
 
-    public void Drop()
+    public void Horizontal()
+    {
+        pos -= .3f;
+        posit = new Vector3(pos, transform.position.y, transform.position.z);
+        this.transform.SetPositionAndRotation(posit, set);
+    }
+
+    public void Vertical()
     {
         pos -= .3f;
         posit = new Vector3(transform.position.x, pos, transform.position.z);
