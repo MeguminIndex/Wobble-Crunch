@@ -8,13 +8,14 @@ public class CrushingScript : MonoBehaviour {
     bool crushing;
     Rigidbody rb;
     [SerializeField]
-    private int slamMassReductionWob;
+    private float slamMassReductionWob;
 
     [SerializeField]
     private float downForce;
     [SerializeField]
     private string groundPound;
-
+	[SerializeField]
+	private float upforce;
 
     // Use this for initialization
     void Start () {
@@ -57,7 +58,10 @@ public class CrushingScript : MonoBehaviour {
             {
                 WobbleStatScript wobwob = collision.gameObject.GetComponent<WobbleStatScript>();
 
-                wobwob.ChangeMass(slamMassReductionWob);
+                float mass = wobwob.ChangeMass(slamMassReductionWob);
+
+
+				rb.AddForce(0,(mass*upforce)+2,0,ForceMode.Impulse);
 
             }
 
