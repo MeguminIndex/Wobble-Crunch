@@ -19,10 +19,10 @@ public class UpdatePointsUI : MonoBehaviour {
     // Update is called once per frame
     void LateUpdate()
     {
-        Debug.Log("Point late");
+       
         if (SM == null)
             return;
-        Debug.Log("SM not null");
+        
 
         pText.text = textPrefix + SM.GetPoints().ToString();
 
