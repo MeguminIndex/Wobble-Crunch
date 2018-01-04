@@ -2,6 +2,4 @@
 Game game 
 
 
-
-Wobble crunch google doc folder:
-https://drive.google.com/drive/folders/1nAYefY4CaR36q7e324jUzUDMLSk8eS4y?usp=sharing
+Game Mode for 24 hour Game Jam 2017
